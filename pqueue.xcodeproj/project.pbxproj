@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7938AD915E76CCB00F727F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7938AD815E76CCB00F727F1 /* Foundation.framework */; };
+		C7938ADE15E76CCB00F727F1 /* MSPriorityQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7938ADD15E76CCB00F727F1 /* MSPriorityQueue.h */; };
+		C7938AE015E76CCB00F727F1 /* MSPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C7938ADF15E76CCB00F727F1 /* MSPriorityQueue.m */; };
+		C7938AE815E76CCC00F727F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7938AE715E76CCC00F727F1 /* SenTestingKit.framework */; };
+		C7938AEA15E76CCC00F727F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7938AE915E76CCC00F727F1 /* UIKit.framework */; };
+		C7938AEB15E76CCC00F727F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7938AD815E76CCB00F727F1 /* Foundation.framework */; };
+		C7938AEE15E76CCC00F727F1 /* libpqueue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7938AD515E76CCB00F727F1 /* libpqueue.a */; };
+		C7938AF415E76CCC00F727F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7938AF215E76CCC00F727F1 /* InfoPlist.strings */; };
+		C7938AF715E76CCC00F727F1 /* pqueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7938AF615E76CCC00F727F1 /* pqueueTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7938AEC15E76CCC00F727F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7938ACC15E76CCB00F727F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7938AD415E76CCB00F727F1;
+			remoteInfo = pqueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7938AD315E76CCB00F727F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				C7938ADE15E76CCB00F727F1 /* MSPriorityQueue.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C7938AD515E76CCB00F727F1 /* libpqueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpqueue.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7938AD815E76CCB00F727F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7938ADC15E76CCB00F727F1 /* pqueue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pqueue-Prefix.pch"; sourceTree = "<group>"; };
+		C7938ADD15E76CCB00F727F1 /* MSPriorityQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPriorityQueue.h; sourceTree = "<group>"; };
+		C7938ADF15E76CCB00F727F1 /* MSPriorityQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSPriorityQueue.m; sourceTree = "<group>"; };
+		C7938AE615E76CCC00F727F1 /* pqueueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pqueueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7938AE715E76CCC00F727F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7938AE915E76CCC00F727F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7938AF115E76CCC00F727F1 /* pqueueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pqueueTests-Info.plist"; sourceTree = "<group>"; };
+		C7938AF315E76CCC00F727F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7938AF515E76CCC00F727F1 /* pqueueTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pqueueTests.h; sourceTree = "<group>"; };
+		C7938AF615E76CCC00F727F1 /* pqueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pqueueTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7938AD215E76CCB00F727F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7938AD915E76CCB00F727F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7938AE215E76CCC00F727F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7938AE815E76CCC00F727F1 /* SenTestingKit.framework in Frameworks */,
+				C7938AEA15E76CCC00F727F1 /* UIKit.framework in Frameworks */,
+				C7938AEB15E76CCC00F727F1 /* Foundation.framework in Frameworks */,
+				C7938AEE15E76CCC00F727F1 /* libpqueue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7938ACA15E76CCB00F727F1 = {
+			isa = PBXGroup;
+			children = (
+				C7938ADA15E76CCB00F727F1 /* pqueue */,
+				C7938AEF15E76CCC00F727F1 /* pqueueTests */,
+				C7938AD715E76CCB00F727F1 /* Frameworks */,
+				C7938AD615E76CCB00F727F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7938AD615E76CCB00F727F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7938AD515E76CCB00F727F1 /* libpqueue.a */,
+				C7938AE615E76CCC00F727F1 /* pqueueTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7938AD715E76CCB00F727F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7938AD815E76CCB00F727F1 /* Foundation.framework */,
+				C7938AE715E76CCC00F727F1 /* SenTestingKit.framework */,
+				C7938AE915E76CCC00F727F1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7938ADA15E76CCB00F727F1 /* pqueue */ = {
+			isa = PBXGroup;
+			children = (
+				C7938ADD15E76CCB00F727F1 /* MSPriorityQueue.h */,
+				C7938ADF15E76CCB00F727F1 /* MSPriorityQueue.m */,
+				C7938ADB15E76CCB00F727F1 /* Supporting Files */,
+			);
+			path = pqueue;
+			sourceTree = "<group>";
+		};
+		C7938ADB15E76CCB00F727F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7938ADC15E76CCB00F727F1 /* pqueue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7938AEF15E76CCC00F727F1 /* pqueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7938AF515E76CCC00F727F1 /* pqueueTests.h */,
+				C7938AF615E76CCC00F727F1 /* pqueueTests.m */,
+				C7938AF015E76CCC00F727F1 /* Supporting Files */,
+			);
+			path = pqueueTests;
+			sourceTree = "<group>";
+		};
+		C7938AF015E76CCC00F727F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7938AF115E76CCC00F727F1 /* pqueueTests-Info.plist */,
+				C7938AF215E76CCC00F727F1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7938AD415E76CCB00F727F1 /* pqueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7938AFA15E76CCC00F727F1 /* Build configuration list for PBXNativeTarget "pqueue" */;
+			buildPhases = (
+				C7938AD115E76CCB00F727F1 /* Sources */,
+				C7938AD215E76CCB00F727F1 /* Frameworks */,
+				C7938AD315E76CCB00F727F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pqueue;
+			productName = pqueue;
+			productReference = C7938AD515E76CCB00F727F1 /* libpqueue.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7938AE515E76CCC00F727F1 /* pqueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7938AFD15E76CCC00F727F1 /* Build configuration list for PBXNativeTarget "pqueueTests" */;
+			buildPhases = (
+				C7938AE115E76CCC00F727F1 /* Sources */,
+				C7938AE215E76CCC00F727F1 /* Frameworks */,
+				C7938AE315E76CCC00F727F1 /* Resources */,
+				C7938AE415E76CCC00F727F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7938AED15E76CCC00F727F1 /* PBXTargetDependency */,
+			);
+			name = pqueueTests;
+			productName = pqueueTests;
+			productReference = C7938AE615E76CCC00F727F1 /* pqueueTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7938ACC15E76CCB00F727F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Mariusz Śpiewak";
+			};
+			buildConfigurationList = C7938ACF15E76CCB00F727F1 /* Build configuration list for PBXProject "pqueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7938ACA15E76CCB00F727F1;
+			productRefGroup = C7938AD615E76CCB00F727F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7938AD415E76CCB00F727F1 /* pqueue */,
+				C7938AE515E76CCC00F727F1 /* pqueueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7938AE315E76CCC00F727F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7938AF415E76CCC00F727F1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7938AE415E76CCC00F727F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7938AD115E76CCB00F727F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7938AE015E76CCB00F727F1 /* MSPriorityQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7938AE115E76CCC00F727F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7938AF715E76CCC00F727F1 /* pqueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7938AED15E76CCC00F727F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7938AD415E76CCB00F727F1 /* pqueue */;
+			targetProxy = C7938AEC15E76CCC00F727F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7938AF215E76CCC00F727F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7938AF315E76CCC00F727F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7938AF815E76CCC00F727F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7938AF915E76CCC00F727F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7938AFB15E76CCC00F727F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/pqueue.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pqueue/pqueue-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7938AFC15E76CCC00F727F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/pqueue.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pqueue/pqueue-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7938AFE15E76CCC00F727F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pqueue/pqueue-Prefix.pch";
+				INFOPLIST_FILE = "pqueueTests/pqueueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C7938AFF15E76CCC00F727F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pqueue/pqueue-Prefix.pch";
+				INFOPLIST_FILE = "pqueueTests/pqueueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7938ACF15E76CCB00F727F1 /* Build configuration list for PBXProject "pqueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7938AF815E76CCC00F727F1 /* Debug */,
+				C7938AF915E76CCC00F727F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7938AFA15E76CCC00F727F1 /* Build configuration list for PBXNativeTarget "pqueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7938AFB15E76CCC00F727F1 /* Debug */,
+				C7938AFC15E76CCC00F727F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7938AFD15E76CCC00F727F1 /* Build configuration list for PBXNativeTarget "pqueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7938AFE15E76CCC00F727F1 /* Debug */,
+				C7938AFF15E76CCC00F727F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7938ACC15E76CCB00F727F1 /* Project object */;
+}
