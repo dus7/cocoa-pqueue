@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "MSPriorityQueue.h"
 
 @interface pqueueTests : SenTestCase
-
+{
+    MSPriorityQueue *queue;
+}
 @end

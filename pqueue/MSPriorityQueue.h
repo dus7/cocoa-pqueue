@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSPriorityQueue : NSMutableArray
+@interface MSPriorityQueue : NSObject
+{
+    @private
+    NSMutableArray *_queueArray;
+}
+
+@property(nonatomic, copy) NSComparisonResult (^comparator)(id obj1, id obj2);
+
+- (id)init;
+- (id)initWithComparator:(NSComparisonResult (^)(id obj1, id obj2))comparator;
+
+- (void)addObject:(id)object;
+- (id)peek;
+- (id)dequeue;
+- (NSInteger)count;
+- (void)removeAllObjects;
 
 @end
